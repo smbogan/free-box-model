@@ -24,7 +24,15 @@ To ensure that the lower left corner of `a` is in the same position as upper rig
 
 To say that box `a` is inside of `b`:
 
-`a < b`
+`a < b`  Note that being inside does not affect the layout of the block, only the graphical clipping.
+
+To say that box `a` is the same dimensions as `b`:
+
+`a = b`
+
+To say that box `a` is inside of `b` and at the same position and size as `b`:
+
+`a <= b`
 
 To free a box of all constraints:
 
@@ -50,4 +58,4 @@ To free all constraints between a box and a specific anchor point on another box
 
 A spacer is used where a box is not needed later, but spacing is required:
 
-`b < a; |a = |$, $| = |b, {a.width = .1*$.width + .9*b.width};`
+`b <= a; |a = |$, $| = |b, {a.width = .1*$.width + .9*b.width};`
