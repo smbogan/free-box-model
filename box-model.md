@@ -48,3 +48,6 @@ To free all constraints between a box and a specific anchor point on another box
 
 #### Spacer Constraints
 
+A spacer is used where a box is not needed later, but spacing is required:
+
+`b < a; |a = |$, $| = |b, {a.width = .1*$.width + .9*b.width};`
