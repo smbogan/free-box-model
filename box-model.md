@@ -22,3 +22,29 @@ To ensure that the lower left corner of `a` is in the same position as upper rig
 
 `.a = b'`
 
+To say that box `a` is inside of `b`:
+
+`a < b`
+
+To free a box of all constraints:
+
+`!a`
+
+To free an anchor point of all constraints:
+
+`!a'`, for example frees all constraints on `a'`.
+
+To free all constraints between two boxes:
+
+`a != b`
+
+To free all constraints between two anchor points:
+
+`.a != b'`
+
+To free all constraints between a box and a specific anchor point on another box:
+
+`a != b`
+
+#### Spacer Constraints
+
